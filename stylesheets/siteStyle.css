@@ -51,6 +51,12 @@ ul
 	font-size: 20px;
 }
 
+#about
+{
+	margin: auto;
+	width: 500px;
+}
+
 #contact li
 {
 	display: inline;
