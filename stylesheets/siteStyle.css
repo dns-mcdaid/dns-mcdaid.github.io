@@ -1,9 +1,14 @@
 body
 {
 	background-color: #333;
-	color: #fff;
+	color: #bbb;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+}
+
+h1, h2, h3
+{
+	color: #fff;
 }
 
 table
@@ -46,16 +51,6 @@ ul
 	font-size: 20px;
 }
 
-#header a:hover
-{
-	background-color: #111;
-}
-
-#about p
-{
-	color: #ccc;
-}
-
 #contact li
 {
 	display: inline;
@@ -66,7 +61,7 @@ ul
 i.fa
 {
 	color: white;
-	font-size: 85px;
+	font-size: 75px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
