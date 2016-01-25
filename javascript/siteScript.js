@@ -1,6 +1,12 @@
 $(document).ready(function() {
   var listener = new window.keypress.Listener();
   var hTags = ["h1", "h2", "h3", "h4", "h5", "h6"];
+  var altImg = [
+    "skeleton-animated-gif-3.gif",
+    "kid-dancing.gif",
+    "goldblum.jpg",
+    "trump.jpg"
+  ];
 
   function filterPath(string) {
     return string
@@ -48,6 +54,13 @@ $(document).ready(function() {
       icons[i].style.color = "green";
     }
 
+    var img = new Image();
     document.getElementsByTagName("h1")[0].innerHTML = "OH SNAP YOU FOUND IT."
+    document.getElementsByTagName("h2")[1].innerHTML = "2sp00ky";
+    var images = document.getElementsByTagName("img");
+
+    for(var i = 0; i < altImg.length; i++){
+      images[i].src = "images/" + altImg[i];
+    }
   });
 });
