@@ -1,9 +1,19 @@
 body
 {
-	background-color: #333;
+	background-color: #000;
 	color: #bbb;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+}
+
+a
+{
+	color: #49c;
+}
+
+a:active, a:hover, a:visited, a:link
+{
+	text-decoration: none;
 }
 
 h1, h2, h3
@@ -41,19 +51,22 @@ img
 	box-shadow: 0 12px 50px 2px black;
 }
 
-#container
+#header
 {
-	padding-left: 20%;
-	padding-right: 20%;
+	position:fixed;
+	height: 75px;
+	background-color: #000;
+	width: 100%;
+	z-index: 5000;
 }
 
 #header ul
 {
 	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	background-color: #000;
 }
 
 #header li
@@ -63,21 +76,22 @@ img
 	font-size: 20px;
 }
 
-#header
+#container
 {
-	position:fixed;
-	height: 100px;
-    background-color: #000;
-    width: 100%;
-    z-index: 5000;
+	background-color: #333;
+	padding-left: 20%;
+	padding-right: 20%;
+	display: block;
+	overflow: auto;
+	padding-bottom: 25px;
 }
 
 #welcome
 {
-	padding-top: 150px;
+	padding-top: 100px;
 }
 
-#about
+#hello
 {
 	margin: auto;
 	width: 500px;
