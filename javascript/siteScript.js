@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  var listener = new window.keypress.Listener();
+  var hTags = ["h1", "h2", "h3", "h4", "h5", "h6"];
+
   function filterPath(string) {
     return string
       .replace(/^\//,'')
@@ -22,5 +25,29 @@ $(document).ready(function() {
          });
       }
     }
+  });
+
+  // Using keypress.js
+  listener.sequence_combo("up up down down left right left right b a enter", function() {
+  	var container = document.getElementById("container");
+    var header = document.getElementById("header");
+    var icons = document.getElementsByTagName("i");
+
+    container.style.backgroundColor = "#b48925";
+    container.style.color = "#ff0080";
+    document.body.style.fontFamily = "Papyrus, fantasy";
+
+    for(var i = 0; i < hTags.length; i++){
+      var gotTags = document.getElementsByTagName(hTags[i]);
+      for(var j = 0; j < gotTags.length; j++){
+        gotTags[j].style.color = "#ffff00"
+      }
+    }
+
+    for(var i = 0; i < icons.length; i++){
+      icons[i].style.color = "green";
+    }
+
+    document.getElementsByTagName("h1")[0].innerHTML = "OH SNAP YOU FOUND IT."
   });
 });
