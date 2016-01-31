@@ -35,11 +35,12 @@ $(document).ready(function() {
 
   // Using keypress.js
   listener.sequence_combo("up up down down left right left right b a enter", function() {
-  	var container = document.getElementById("container");
+  	var container = document.getElementById("main");
     var header = document.getElementById("header");
     var icons = document.getElementsByTagName("i");
 
     container.style.backgroundColor = "#b48925";
+    document.getElementsByTagName("body")[0].backgroundColor = "#b48925";
     container.style.color = "#ff0080";
     document.body.style.fontFamily = "Papyrus, fantasy";
 

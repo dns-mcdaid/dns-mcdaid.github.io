@@ -3,18 +3,28 @@ body {
 	color: #bbb;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
+	margin: auto;
 }
 
 a {
-	color: #49c;
+	color: #5ae;
 }
 
 a:active, a:hover, a:visited, a:link {
 	text-decoration: none;
+	color: #5ae;
 }
 
-h1, h2, h3 {
+a:hover {
+	opacity: 0.7;
+}
+
+h1 {
 	color: #fff;
+}
+
+h2, h3 {
+	color: #eee;
 }
 
 h4 {
@@ -47,6 +57,8 @@ img {
 }
 
 nav {
+	width: 100%;
+	margin: auto;
 	position:fixed;
 	height: 75px;
 	background-color: #000;
@@ -66,6 +78,10 @@ nav li {
 	display: inline-block;
 	padding: 20px;
 	font-size: 20px;
+}
+
+header {
+	margin: auto;
 }
 
 #main, .footer {
@@ -92,6 +108,10 @@ nav li {
 	padding-right: 10px;
 }
 
+.posts, .post {
+	text-align: left;
+}
+
 i.fa {
 	color: white;
 	font-size: 60px;
@@ -100,5 +120,5 @@ i.fa {
 }
 
 i.fa:hover {
-	opacity: 0.5;
+	opacity: 0.7;
 }
