@@ -7,6 +7,8 @@ $(document).ready(function() {
     "goldblum.jpg",
     "trump.jpg"
   ];
+  var mud = "#b48925";
+  var hotterPink = "#ff0080";
 
   function filterPath(string) {
     return string
@@ -35,13 +37,19 @@ $(document).ready(function() {
 
   // Using keypress.js
   listener.sequence_combo("up up down down left right left right b a enter", function() {
-  	var container = document.getElementById("main");
-    var header = document.getElementById("header");
+  	var main = document.getElementById("main");
     var icons = document.getElementsByTagName("i");
+    var footer = document.getElementsByClassName("footer");
+    var description = document.getElementsByClassName("site-description");
 
-    container.style.backgroundColor = "#b48925";
-    document.getElementsByTagName("body")[0].backgroundColor = "#b48925";
-    container.style.color = "#ff0080";
+    main.style.backgroundColor = mud;
+    document.getElementsByTagName("body")[0].style.backgroundColor = mud;
+    footer[0].style.backgroundColor = mud;
+
+    main.style.color = hotterPink;
+    description[0].style.color = "green";
+    description[0].innerHTML = "I had way too much time on my hands.";
+
     document.body.style.fontFamily = "Papyrus, fantasy";
 
     for(var i = 0; i < hTags.length; i++){
