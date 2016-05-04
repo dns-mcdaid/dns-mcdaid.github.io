@@ -9,6 +9,7 @@ $(document).ready(function() {
   ];
   var mud = "#b48925";
   var hotterPink = "#ff0080";
+  var barneyPurple = "#2E0854";
 
   function filterPath(string) {
     return string
@@ -36,15 +37,19 @@ $(document).ready(function() {
   });
 
   // Using keypress.js
-  listener.sequence_combo("up up down down left right left right b a enter", function() {
+  listener.sequence_combo("up up down down left right left right b a", function() {
   	var main = document.getElementById("main");
     var icons = document.getElementsByTagName("i");
     var footer = document.getElementsByClassName("footer");
     var description = document.getElementsByClassName("site-description");
+    var header = document.getElementsByTagName("nav");
+    var headContent = document.getElementsByClassName("headnav");
 
     main.style.backgroundColor = mud;
     document.getElementsByTagName("body")[0].style.backgroundColor = mud;
     footer[0].style.backgroundColor = mud;
+    header[0].style.backgroundColor = barneyPurple;
+    headContent[0].style.backgroundColor = barneyPurple;
 
     main.style.color = hotterPink;
     description[0].style.color = "green";
@@ -65,7 +70,7 @@ $(document).ready(function() {
 
     var img = new Image();
     document.getElementsByTagName("h1")[0].innerHTML = "OH SNAP YOU FOUND IT."
-    document.getElementsByTagName("h2")[1].innerHTML = "2sp00ky";
+    document.getElementsByTagName("h2")[1].innerHTML = "I need to get a life";
     var images = document.getElementsByTagName("img");
 
     for(var i = 0; i < altImg.length; i++){

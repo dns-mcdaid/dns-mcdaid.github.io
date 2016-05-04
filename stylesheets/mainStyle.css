@@ -49,7 +49,6 @@ td {
 ul {
 	padding: 0;
 	margin: 0;
-	list-style-top: none;
 	list-style: none;
 }
 
@@ -72,7 +71,7 @@ nav {
 	z-index: 5000;
 }
 
-nav ul {
+.headnav {
 	list-style-type: none;
   margin: 0;
   padding: 0;
@@ -124,8 +123,12 @@ header {
 	padding-right: 20%;
 }
 
-.exp ul {
+.skills ul {
 	text-align: center;
+}
+
+.exp li {
+	list-style-type: square;
 }
 
 i.fa {
