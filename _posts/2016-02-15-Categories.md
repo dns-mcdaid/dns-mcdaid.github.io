@@ -7,7 +7,7 @@ Aristotle and Steve McConnell would've been best friends if the two ever crossed
 
 #### Inheritance
 
-Right from the get-go, Aristotle explains that "some things are both predicated of and are in a subject". Humans and oxen are both animals, however they differ in their specific type of animal, as a human does not have many of the key features which makes an ox an ox. Understanding how two classifications can belong to the same hierarchy without being the same exact things in and of themselves is Inheritance 101. Aristotle classifies these as "'relatives,' which are said to be what they are from belonging to other things, or in whatever other way they may be referred to something else."
+Right from the get-go, Aristotle explains that "some things are both predicated of and are in a subject". Humans and oxen are both animals, however they differ in their specific type of animal, as a human does not have many of the key features which makes an ox an ox. Understanding how two classifications can belong to the same hierarchy without being the same exact things in and of themselves is Inheritance 101.
 
 #### Instantiation
 
