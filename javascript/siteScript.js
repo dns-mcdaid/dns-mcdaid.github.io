@@ -5,7 +5,7 @@ $(document).ready(function() {
     "skeleton-animated-gif-3.gif",
     "kid-dancing.gif",
     "goldblum.jpg",
-    "zodiac_cruz.gif"
+    "trump.jpg"
   ];
   var mud = "#b48925";
   var hotterPink = "#ff0080";
@@ -21,7 +21,9 @@ $(document).ready(function() {
   // jQuery smooth scrolling shamelessly ripped off from Karl Swedberg:
   // http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links
   $('a[href*=\\#]').each(function() {
-    if ( filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/,'') ) {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
       var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
       var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
        if ($target) {
@@ -58,21 +60,21 @@ $(document).ready(function() {
     for(var i = 0; i < hTags.length; i++){
       var gotTags = document.getElementsByTagName(hTags[i]);
       for(var j = 0; j < gotTags.length; j++){
-        gotTags[j].style.color = "#ffff00";
+        gotTags[j].style.color = "#ffff00"
       }
     }
 
-    for(var iconDex = 0; iconDex < icons.length; iconDex++){
-      icons[iconDex].style.color = "green";
+    for(var i = 0; i < icons.length; i++){
+      icons[i].style.color = "green";
     }
 
     var img = new Image();
-    document.getElementsByTagName("h1")[0].innerHTML = "OH SNAP YOU FOUND IT.";
+    document.getElementsByTagName("h1")[0].innerHTML = "OH SNAP YOU FOUND IT."
     document.getElementsByTagName("h2")[1].innerHTML = "I need to get a life";
     var images = document.getElementsByTagName("img");
 
-    for(var k = 0; k < altImg.length; k++){
-      images[k].src = "images/" + altImg[k];
+    for(var i = 0; i < altImg.length; i++){
+      images[i].src = "images/" + altImg[i];
     }
   });
 });
