@@ -3,76 +3,29 @@
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/mainStyle.css">
-		<script src="{{ site.baseurl }}/javascript/siteScript.js"></script>
-		<script src="{{ site.baseurl }}/javascript/keypress-2.1.3.min.js"></script>
-
-    <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon-16x16.png" sizes="16x16" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- MATERIAL: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+      <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <!-- Container classes mess up the header alignment -->
-      <!-- and I'm too dumb to implement a fix at the moment, -->
-      <!-- so I'm just commenting them all out for now. -->
-      <!--<div class="container">-->
-        <header class="masthead clearfix">
-          <nav>
-            <ul class="headnav">
-              <li><a href="{{ site.baseurl }}/">Home</a></li>
-              <li><a href="{{ site.baseurl }}/mcdaid_dennis_resume.pdf">Resume</a></li>
-              <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Menu</span>
+          <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="{{ site.baseurl }}/">Home</a>
+              <a class="mdl-navigation__link" href="{{ site.baseurl }}/blog">Blog</a>
+              <a class="mdl-navigation__link" href="{{ site.baseurl }}/music">Music</a>
+              <a class="mdl-navigation__link" href="{{ site.baseurl }}/mcdaid_dennis_resume.pdf">Resume</a>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
           </nav>
-        </header>
-      <!--</div>-->
-    </div>
-
-    <div id="welcome">
-        <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
-
-        <div class="site-info">
-          <h1 class="site-name">{{ site.name }}</h1>
-          <p class="site-description">{{ site.description }}</p>
         </div>
+        <main "mdl-layout__content">
+          <div class="page-content" style="padding-left: 100px">
+            Hello World!
+          </div>
+        </main>
     </div>
-
-    <div id="main" role="main">
-      <!--<div class="container">-->
-        {{ content }}
-      <!--</div>-->
-    </div>
-
-    <div class="wrapper-footer">
-      <!--<div class="container">-->
-        <footer class="footer" id="contact">
-          <h2>Contact</h2>
-          {% include svg-icons.html %}
-        </footer>
-      <!--</div>-->
-    </div>
-
-    {% include analytics.html %}
-  </body>
 </html>
