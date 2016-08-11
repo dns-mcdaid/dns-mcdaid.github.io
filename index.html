@@ -1,35 +1,94 @@
 ---
 layout: default
 ---
-<table>
-  <tr>
-    <td>
-      <div class="wide-card mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title">
-          <h2 class="mdl_card__title-text">Hello!</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          Make yourself at home, I've got a few neat projects up top and more professional info on the bottom. This site and most of the projects below are meant to highlight a lot of the web dev stuff I've done, but if you check out my <a href="https://github.com/RajahBimmy">Github</a>, you'll find some cool non-web stuff as well. This site was built using Jekyll and Github-Pages, and if you know the <a href="https://en.wikipedia.org/wiki/Konami_Code">Konami Code</a>, you'll probably have some fun here.
-        </div>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div id="pong" class="image-card mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-          <span class="image-card-image__filename white-text">p5 Pong</span>
-        </div>
-      </div>
-    </td>
-    <td>
-      <div id="sungear" class="image-card mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand"></div>
-        <div class="mdl-card__actions">
-          <span class="image-card-image__filename black-text">SunGear</span>
-        </div>
-      </div>
-    </td>
-  </tr>
-</table>
+
+<div class="mdl-grid portfolio-max-width">
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="images/sungear.jpg" border="0" alt="SunGear" />
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Sungear</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <b>WORK IN PROGRESS. Expected to launch in September.</b> Sungear is a complex Node.js data visualization app which allows users to compare sets of data and see live visualizations of their unions and intersections.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--acent" href="https://github.com/RajahBimmy/Sungear">Source code</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="images/informed.png" border="0" alt="Informed" />
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Informed</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <b>NYU Spring '16 Demo Showcase.</b> Written in Swift, Informed aggregates articles from outlets like The Guardian, NPR, and CNN to turn your daily news reading routine into a competitive iOS game.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--acent" href="https://github.com/katiekroik/Informed">Source code</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="images/sentiment.png" border="0" alt="Sentiment Forecase" />
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Sentiment Forecast</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <b>Winner: HackNYU 2016.</b> This web app features a C# back-end which makes various calls to Twitter, Tumblr, and Alchemy APIs to perform sentiment analysis. It then moves to d3.js for a timeline of sentiment visualizations.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--acent" href="http://rajahbimmy.github.io/SentimentForecast/">Check it out here</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="images/pong.png" border="0" alt="p5 Pong" />
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">p5 Pong</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      This project features p5, a resource for HTML canvas processing via javascript, to re-create the classic Atari game, Pong. Please note that the AI is brutally hard, and proof that I should never apply for a job at Skynet.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--acent" href="http://rajahbimmy.github.io/p5-Pong/">Play it now</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="images/enlightenment.png" border="0" alt="Enlightenment Map" />
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Enlightenment Map</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Built to explore the crossroads between literary scholarship and modern web technology, this map uses jVectorMap and Raphael.js to illustrate some of the geographical hot spots in Enlightenment literature.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--acent" href="http://rajahbimmy.github.io/EnlightenmentMap/">Read more</a>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+    <div class="mdl-card__media">
+      <img class="article-image" src="images/room724.png" border="0" alt="Room 724" />
+    </div>
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Room 724 Portfolio</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      A collection of data visualizations and great teammates, this portfolio highlights past and current web developers for NYU's Housing Department and an interactive web featuring some of our greatest projects.
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--acent" href="https://github.com/katiekroik/Informed">Check it out here</a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var portfolio = document.getElementById('portfolio');
+  portfolio.className += " is-active"
+</script>
