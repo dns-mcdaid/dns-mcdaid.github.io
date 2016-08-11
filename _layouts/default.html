@@ -15,18 +15,20 @@
     <script src="https://use.fontawesome.com/9f8588c20b.js"></script>
 
     <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon-16x16.png" sizes="16x16" />
   </head>
 
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-     <header class="mdl-layout__header portfolio-header">
+     <header class="mdl-layout__header mdl-layout__header--scroll portfolio-header">
         <div class="mdl-layout__header-row portfolio-logo-row">
           <span class="mdl-layout__title">
             <span class="mdl-layout__title">{{ site.name }}</span>
             <span class="mdl-layout__title portfolio-subtext">{{ site.description }}</span>
           </span>
         </div>
-          <!-- <span class="mdl-layout__description">{{ site.description }}</span> -->
         <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
           <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
             <a class="mdl-navigation__link" id="portfolio" href="{{ site.baseurl }}/">Portfolio</a>
@@ -44,16 +46,17 @@
             <a class="mdl-navigation__link" href="{{ site.baseurl }}/blog">Blog</a>
             <a class="mdl-navigation__link" href="{{ site.baseurl }}/music">Music</a>
         </nav>
-        </div>
-      <main class="mdl-layout__content">
+      </div>
+      <div class="demo-ribbon"></div>
+      <main class="mdl-layout__content demo-main">
         <div class="page-content">
           {{ content }}
         </div>
-        <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer__left-section portfolio-footer">
-            {% include svg-icons.html %}
-          </div>
-        </footer>
       </main>
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__left-section portfolio-footer">
+          {% include svg-icons.html %}
+        </div>
+      </footer>
     </div>
 </html>

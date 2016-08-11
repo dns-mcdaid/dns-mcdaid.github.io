@@ -1,9 +1,13 @@
 ---
 layout: post
 title: The Art of War
+has_img: true
+img: ../blog_images/art_of_war.jpg
 ---
 
-_The Art of War_ has a lot of clever insight to offer when strategizing software development. In this post, I want to break down each chapter piece by piece, and attempt to synthesize the major themes alongside the research I've been doing for this colloquium. I'm reading this alongside Steve McConnell's _Code Complete_, so forgive me if every knot I tie is between these two texts, I just need to start connecting the dots ASAP. Judging from the book size, I'm also apparently writing as much if not more than Sun Tzu did.
+_The Art of War_ has a lot of clever insight to offer when strategizing software development. I want to break down each chapter piece by piece, and synthesize the major themes alongside the research I've been doing for this colloquium.
+
+I'm reading this alongside Steve McConnell's _Code Complete_, so forgive me if every knot I tie is between these two texts, I just need to start connecting the dots ASAP. Judging from the book size, I'm also apparently writing as much if not more than Sun Tzu did.
 
 #### Chapter I: Laying Plans
 

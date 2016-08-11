@@ -5,7 +5,20 @@
 .portfolio-header {
   position: relative;
   // background-image: url(images/header-bg.jpg);
-  // background-color: #424242;
+  background-color: #424242;
+}
+
+.portfolio-copy {
+  max-width: 700px;
+}
+
+.no-padding {
+  padding: 0;
+
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -38,19 +51,18 @@
   min-height: auto;
 }
 
-.portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 150px;
-  margin: auto auto 10px;
-}
-
-.is-compact .portfolio-logo {
-  height: 50px;
-  width: 50px;
-  margin-top: 7px;
-}
+// .portfolio-logo {
+//   background-size: cover;
+//   height: 150px;
+//   width: 150px;
+//   margin: auto auto 10px;
+// }
+//
+// .is-compact .portfolio-logo {
+//   height: 50px;
+//   width: 50px;
+//   margin-top: 7px;
+// }
 
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
@@ -70,10 +82,6 @@
           flex: 1;
   line-height: 42px;
 }
-
-// .portfolio-header .mdl-layout__drawer-button {
-//     background-color: rgba(197, 197, 197, 0.44);
-// }
 
 .portfolio-navigation-row .is-active {
   position: relative;
@@ -116,35 +124,63 @@ img.article-image {
   margin: auto;
 }
 
-.wide-card.mdl-card {
-  width: 512px;
+.portfolio-share-btn {
+  position: relative;
+  float: right;
+  top: -4px;
 }
 
-.image-card.mdl-card {
-   width: 256px;
-   height: 256px;
-
-}
-.image-card-image__filename {
-   color: #fff;
-   font-size: 14px;
-   font-weight: bold;
+.padding-top {
+  padding: 10px 0 0;
 }
 
-.white-text {
-  color: #fff;
+.no-left-padding{
+  padding-left: 0;
 }
 
-.black-text {
-  color: #000;
+// Music section:
+
+.demo-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(68,138,255);
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
-#pong {
-  background: url('../images/pong.png') center / cover;
+.demo-main {
+  margin-top: -35vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
-#sungear {
-  background: url('../images/sungear.png') center / cover;
+.demo-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.demo-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.demo-layout.is-small-screen .demo-content {
+  padding: 40px 28px;
+}
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+.read-article {
+    position: absolute;
+    bottom: 0;
+}
+
+.article-content {
+  margin-bottom: 30px;
 }
 
 //
