@@ -2,6 +2,55 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+.portfolio-header {
+  position: relative;
+  // background-image: url(images/header-bg.jpg);
+}
+
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mdl-layout__title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.wide-card.mdl-card {
+  width: 512px;
+}
+
+.image-card.mdl-card {
+   width: 256px;
+   height: 256px;
+
+}
+.image-card-image__filename {
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.black-text {
+  color: #000;
+}
+
+#pong {
+  background: url('../images/pong.png') center / cover;
+}
+
+#sungear {
+  background: url('../images/sungear.png') center / cover;
+}
+
 //
 // Social Sharing Buttons for Material Design Lite
 // by Brandon Himpfen http://www.himpfen.com/
@@ -14,7 +63,8 @@ $stumbleupon: #f74425;
 $linkedin: #0e76a8;
 $github: #6cc644;
 $email: #e93f2e;
-$instagram: #833ab4;
+// $instagram: #833ab4;
+$instagram: #222222;
 $stack-overflow: #f69c25;
 
 $md-colour-list: (

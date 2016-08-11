@@ -17,21 +17,20 @@
 
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-     <header class="mdl-layout__header">
+     <header class="mdl-layout__header portfolio-header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">{{ site.name }}</span>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <div class="mdl-navigation__link">{{ site.description }}</div>
-              <!-- <a class="mdl-navigation__link" href="{{ site.baseurl }}/">Home</a>
+          <span class="mdl-layout__title">{{ site.name }}</span>
+          <!-- <span class="mdl-layout__description">{{ site.description }}</span> -->
+          <!-- <div class="mdl-layout-spacer"></div> -->
+          <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
+              <a class="mdl-navigation__link" href="{{ site.baseurl }}/">Home</a>
               <a class="mdl-navigation__link" href="{{ site.baseurl }}/blog">Blog</a>
               <a class="mdl-navigation__link" href="{{ site.baseurl }}/music">Music</a>
-              <a class="mdl-navigation__link" href="{{ site.baseurl }}/mcdaid_dennis_resume.pdf">Resume</a>
-              <a class="mdl-navigation__link" href="#contact">Contact</a> -->
-          </nav>
+              <a class="mdl-navigation__link" href="#contact">Contact</a>
+          </nav> -->
         </div>
       </header>
-      <div class="mdl-layout__drawer">
+      <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <span class="mdl-layout-title">Menu</span>
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="{{ site.baseurl }}/">Home</a>
@@ -42,8 +41,9 @@
         </nav>
         </div>
       <main class="mdl-layout__content">
-        <div class="page-content" style="padding-left: 100px"></div>
-
+        <div class="page-content">
+          {{ content }}
+        </div>
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer__left-section">
             {% include svg-icons.html %}
