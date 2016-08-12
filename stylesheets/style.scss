@@ -198,6 +198,7 @@ $email: #e93f2e;
 // $instagram: #833ab4;
 $instagram: #222222;
 $stack-overflow: #f69c25;
+$medium: #02B875;
 
 $md-colour-list: (
 twitter $twitter,
@@ -208,7 +209,8 @@ linkedin $linkedin,
 github $github,
 email $email,
 instagram $instagram,
-stack-overflow $stack-overflow
+stack-overflow $stack-overflow,
+medium $medium
 );
 
 @each $colour-name, $md-colour in $md-colour-list {
