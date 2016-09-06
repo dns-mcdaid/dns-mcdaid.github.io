@@ -195,10 +195,11 @@ $stumbleupon: #f74425;
 $linkedin: #0e76a8;
 $github: #6cc644;
 $email: #e93f2e;
-// $instagram: #833ab4;
-$instagram: #222222;
+$instagram: #833ab4;
+// $instagram: #222222;
 $stack-overflow: #f69c25;
 $medium: #02B875;
+$livecoding: #222222;
 
 $md-colour-list: (
 twitter $twitter,
@@ -210,7 +211,8 @@ github $github,
 email $email,
 instagram $instagram,
 stack-overflow $stack-overflow,
-medium $medium
+medium $medium,
+livecoding $livecoding
 );
 
 @each $colour-name, $md-colour in $md-colour-list {
