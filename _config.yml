@@ -3,47 +3,25 @@
 #
 
 # Name of your site (displayed in the header)
-name: Dennis McDaid
+name: Dennis McDaid's Portfolio
 
 # Short bio or description (displayed in the header)
-description: New York Software Developer
+description: Hey! I'm updating this site at the moment. In the meantime, please go to my LinkedIn and be slightly less unimpressed there.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/10967770?v=3&s=460
 
-#
-# Flags below are optional
-#
-
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
-  email: dennis.mcdaid@nyu.edu
-  facebook: dennis.mcdaid.3
-  flickr:
-  github: RajahBimmy
-  instagram: rajah_bimmy
-  livecoding: rajah_bimmy
-  linkedin: dennis-mcdaid-1022b3b2
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: Rajah_Bimmy
-  stackoverflow: users/4760751/rajah-bimmy
+  email: dmcdaid95@gmail.edu
+  github: dns-mcdaid
+  linkedin: dennismcdaid
+  twitter: dns_mcdaid
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-  medium: RajahBimmy
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
+  medium: dns_mcdaid
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url:
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
