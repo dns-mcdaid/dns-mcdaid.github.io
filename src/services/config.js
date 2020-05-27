@@ -4,7 +4,7 @@ export default {
     title: "I'm Dennis.",
     profile: "headshot-square.jpg",
   },
-  description: "I'm an American software engineer currently based in Melbourne, Australia. I lead scrappy teams with a healthy balance of agile thinking and chaotic good energy. While mobile development is my bread and butter, I love any excuse to pick up new tech. I'm currently using this portfolio page as a way to round out my knowledge of Vue.js and brush up on CSS. If you're looking to get in touch or would like to check out my god awful film reviews, check out the links below.",
+  description: "I'm an American software engineer currently based in Melbourne, Australia. I lead scrappy teams with a healthy balance of agile thinking and chaotic good energy. While mobile development is my bread and butter, I love any excuse to pick up new tech. I'm currently using this portfolio page as a way to round out my knowledge of Vue.js and brush up on CSS. If you're looking to get in touch or take a look at my god awful film reviews, check out the links below.",
   projects: [
     {
       "name": "CovidCare",
